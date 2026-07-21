@@ -1,0 +1,103 @@
+import {
+  Briefcase,
+  GraduationCap,
+  Landmark,
+  Train,
+  Shield,
+  BookOpen,
+  University,
+  FileText,
+  Globe,
+  FileBadge,
+  Building2,
+  BadgeDollarSign,
+} from "lucide-react";
+
+const categories = [
+  {
+    id: 1,
+    title: "Government Jobs",
+    slug: "government-jobs",
+    icon: Briefcase,
+    description: "UPSC, SSC, RPSC & more",
+  },
+  {
+    id: 2,
+    title: "Entrance Exams",
+    slug: "entrance-exams",
+    icon: GraduationCap,
+    description: "NEET, JEE, CUET & more",
+  },
+  {
+    id: 3,
+    title: "Banking Exams",
+    slug: "banking-exams",
+    icon: Landmark,
+    description: "SBI, IBPS, RBI & more",
+  },
+  {
+    id: 4,
+    title: "Railway Jobs",
+    slug: "railway-jobs",
+    icon: Train,
+    description: "RRB NTPC, Group D & more",
+  },
+  {
+    id: 5,
+    title: "Defence",
+    slug: "defence",
+    icon: Shield,
+    description: "Army, Navy, Air Force& more",
+  },
+  {
+    id: 6,
+    title: "Education",
+    slug: "education",
+    icon: BookOpen,
+    description: "NTA, AICTE, NCErt & more",
+  },
+  {
+    id: 7,
+    title: "Universities",
+    slug: "universities",
+    icon: University,
+    description: "MBM, JNVU, DU & more",
+  },
+  {
+    id: 8,
+    title: "Board Results",
+    slug: "board-results",
+    icon: FileText,
+    description: "CBSE, RBSE & State Boards",
+  },
+  {
+    id: 9,
+    title: "Official Websites",
+    slug: "official-websites",
+    icon: Globe,
+    description: "UIDAI, Passport, DigiLocker",
+  },
+  {
+    id: 10,
+    title: "Government Services",
+    slug: "government-services",
+    icon: FileBadge,
+    description: "SSO, eMitra, Jan Aadhaar",
+  },
+  {
+    id: 11,
+    title: "Private Jobs",
+    slug: "private-jobs",
+    icon: Building2,
+    description: "LinkedIn, Naukri, Indeed",
+  },
+  {
+    id: 12,
+    title: "Scholarships",
+    slug: "scholarships",
+    icon: BadgeDollarSign,
+    description: "NSP, AICTE & more",
+  },
+];
+
+export default categories;

@@ -1,6 +1,38 @@
 import { Link } from "react-router-dom";
+import { Icon } from "@iconify/react";
 import "./CategorySection.css";
 import categories from "../../data/categories";
+
+
+const colors = [
+  "#2563eb", // Blue
+  "#7c3aed", // Purple
+  "#16a34a", // Green
+  "#ea580c", // Orange
+  "#dc2626", // Red
+  "#0891b2", // Cyan
+  "#4f46e5", // Indigo
+  "#db2777", // Pink
+  "#0f766e", // Teal
+  "#ca8a04", // Yellow
+  "#475569", // Slate
+  "#059669", // Emerald
+];
+
+const backgrounds = [
+  "#eff6ff",
+  "#f5f3ff",
+  "#f0fdf4",
+  "#fff7ed",
+  "#fef2f2",
+  "#ecfeff",
+  "#eef2ff",
+  "#fdf2f8",
+  "#f0fdfa",
+  "#fefce8",
+  "#f8fafc",
+  "#ecfdf5",
+];
 
 function CategorySection() {
   return (
@@ -17,9 +49,9 @@ function CategorySection() {
 
         <div className="category-grid">
 
-          {categories.map((category) => {
+          {categories.map((category, index) => {
 
-            const Icon = category.icon;
+           
 
             return (
 
@@ -29,9 +61,18 @@ function CategorySection() {
                 className="category-card"
               >
 
-                <div className="category-icon">
-                  <Icon size={42} strokeWidth={2} />
-                </div>
+                <div
+  className="category-icon"
+  style={{
+    background: backgrounds[index],
+  }}
+>
+  <Icon
+    icon={category.icon}
+    width="34"
+    height="34"
+  />
+</div>
 
                 <h3>{category.title}</h3>
 

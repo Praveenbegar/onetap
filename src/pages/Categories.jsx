@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Icon } from "@iconify/react";
 import categories from "../data/categories";
 import "./Categories.css";
 
@@ -18,7 +19,7 @@ function Categories() {
 
           {categories.map((category) => {
 
-            const Icon = category.icon;
+          
 
             return (
               <div
@@ -28,7 +29,13 @@ function Categories() {
                   navigate(`/categories/${category.slug}`)
                 }
               >
-                <Icon size={42} />
+               <div className="category-page-icon">
+  <Icon
+    icon={category.icon}
+    width="38"
+    height="38"
+  />
+</div>
 
                 <h2>{category.title}</h2>
 

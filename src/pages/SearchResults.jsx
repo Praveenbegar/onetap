@@ -1,53 +1,46 @@
-import "./SearchResults.css";
-import { useLocation } from "react-router-dom";
-import resources from "../data/resources";
-import SearchResultCard from "../components/search/SearchResultCard";
+import { useSearchParams, Link } from "react-router-dom";
+import { SearchX } from "lucide-react";
+import { useData } from "../context/DataContext";
+import { searchResources } from "../lib/search";
+import ResourceCard from "../components/ResourceCard";
+import SearchBox from "../components/SearchBox";
+import usePageTitle from "../lib/usePageTitle";
 
-function SearchResults() {
-  const location = useLocation();
-
-  const params = new URLSearchParams(location.search);
+export default function SearchResults() {
+  const [params] = useSearchParams();
   const query = params.get("q") || "";
+  const { resources, categories } = useData();
+  usePageTitle(query ? `Search: ${query}` : "Search");
 
-  const results = resources.filter((item) => {
-    const keyword = query.toLowerCase();
-
-    return (
-      item.title.toLowerCase().includes(keyword) ||
-      item.description.toLowerCase().includes(keyword) ||
-      item.category.toLowerCase().includes(keyword)
-    );
-  });
+  const results = searchResources(resources, categories, query);
 
   return (
-    <section className="search-results-page">
-      <div className="search-results-container">
+    <section className="page">
+      <div className="container">
+        <div className="page-head">
+          <h1>Search Results</h1>
+          <p>
+            {query ? <><b>{results.length}</b> result(s) for <b>"{query}"</b></> : "Search for something."}
+          </p>
+        </div>
 
-        <h1>Search Results</h1>
+        <div className="search-top"><SearchBox key={query} initial={query} /></div>
 
-        <p>
-          {results.length} result(s) found for <strong>"{query}"</strong>
-        </p>
-
-        {results.length === 0 ? (
-          <div className="no-results">
-            <h2>No Results Found</h2>
-            <p>Try another keyword.</p>
+        {results.length > 0 ? (
+          <div className="rgrid">
+            {results.map((r) => <ResourceCard key={r.slug} resource={r} />)}
           </div>
         ) : (
-          <div className="search-results-grid">
-            {results.map((item) => (
-              <SearchResultCard
-                key={item.id}
-                resource={item}
-              />
-            ))}
-          </div>
+          query && (
+            <div className="empty">
+              <SearchX size={44} />
+              <h2>No results found</h2>
+              <p>Try a different keyword or browse by category.</p>
+              <Link to="/categories" className="btn btn-primary">Browse categories</Link>
+            </div>
+          )
         )}
-
       </div>
     </section>
   );
 }
-
-export default SearchResults;

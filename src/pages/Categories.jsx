@@ -1,56 +1,34 @@
-import { useNavigate } from "react-router-dom";
-import { Icon } from "@iconify/react";
-import categories from "../data/categories";
-import "./Categories.css";
+import { Link } from "react-router-dom";
+import { useData } from "../context/DataContext";
+import { CategoryIcon } from "../lib/icons";
+import usePageTitle from "../lib/usePageTitle";
 
-function Categories() {
-  const navigate = useNavigate();
+export default function Categories() {
+  usePageTitle("All Categories");
+  const { categories, resources } = useData();
 
   return (
-    <section className="categories-page">
-      <div className="categories-container">
-
-        <div className="page-heading">
+    <section className="page">
+      <div className="container">
+        <div className="page-head">
           <h1>All Categories</h1>
           <p>Browse all official resources category wise.</p>
         </div>
 
-        <div className="categories-grid">
-
-          {categories.map((category) => {
-
-          
-
+        <div className="cat-grid">
+          {categories.map((c) => {
+            const n = resources.filter((r) => r.category === c.slug).length;
             return (
-              <div
-                className="category-page-card"
-                key={category.id}
-                onClick={() =>
-                  navigate(`/categories/${category.slug}`)
-                }
-              >
-               <div className="category-page-icon">
-  <Icon
-    icon={category.icon}
-    width="38"
-    height="38"
-  />
-</div>
-
-                <h2>{category.title}</h2>
-
-                <p className="category-description">
-  {category.description}
-</p>
-              </div>
+              <Link key={c.slug} to={`/categories/${c.slug}`} className={`cat-card tone-${c.color}`}>
+                <span className="cat-icon"><CategoryIcon name={c.icon} size={26} /></span>
+                <h3>{c.title}</h3>
+                <p>{c.description}</p>
+                <span className="cat-count">{n} {n === 1 ? "resource" : "resources"}</span>
+              </Link>
             );
           })}
-
         </div>
-
       </div>
     </section>
   );
 }
-
-export default Categories;

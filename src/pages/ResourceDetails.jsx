@@ -1,202 +1,94 @@
-import { useParams } from "react-router-dom";
-import resourceDetails from "../data/resourceDetails";
-import "./ResourceDetails.css";
+import { Link, useParams } from "react-router-dom";
+import { ArrowLeft, ExternalLink, BadgeCheck, CalendarDays, Info } from "lucide-react";
+import { useData } from "../context/DataContext";
+import ResourceCard from "../components/ResourceCard";
+import { formatDate, hostOf, isUrl } from "../lib/helpers";
+import { CategoryIcon } from "../lib/icons";
+import usePageTitle from "../lib/usePageTitle";
+import NotFound from "./NotFound";
 
-function Row({ label, value }) {
-  if (!value) return null;
-
-  const isLink =
-    typeof value === "string" &&
-    (value.startsWith("http://") || value.startsWith("https://"));
-
-  return (
-    <tr>
-      <th>{label}</th>
-      <td>
-        {isLink ? (
-          <a href={value} target="_blank" rel="noreferrer">
-            Visit Website
-          </a>
-        ) : (
-          value
-        )}
-      </td>
-    </tr>
-  );
-}
-
-function ResourceDetails() {
+export default function ResourceDetails() {
   const { slug } = useParams();
+  const { resources, categories } = useData();
 
-  const data = resourceDetails[slug];
+  const r = resources.find((x) => x.slug === slug);
+  usePageTitle(r?.title);
+  if (!r) return <NotFound message="This resource could not be found." />;
 
-  if (!data) {
-    return (
-      <section className="resource-details-page">
-        <div className="resource-details-container">
-          <h1>Resource Not Found</h1>
-        </div>
-      </section>
-    );
-  }
+  const cat = categories.find((c) => c.slug === r.category);
+  const entries = Object.entries(r.details || {}).filter(([, v]) => v);
+  const related = resources.filter((x) => x.category === r.category && x.slug !== r.slug).slice(0, 3);
 
   return (
-    <section className="resource-details-page">
-      <div className="resource-details-container">
+    <section className="page">
+      <div className="container narrow">
+        <Link to={cat ? `/categories/${cat.slug}` : "/categories"} className="back-link">
+          <ArrowLeft size={16} /> {cat?.title || "Categories"}
+        </Link>
 
-        <h1>
-          {data.formName ||
-            data.serviceName ||
-            data.websiteName ||
-            data.universityName ||
-            data.boardName ||
-            data.platformName ||
-            data.scholarshipName}
-        </h1>
+        <div className={`detail-head tone-${cat?.color || "blue"}`}>
+          <span className="cat-icon big"><CategoryIcon name={cat?.icon} size={34} /></span>
+          <div className="detail-title">
+            <div className="detail-tags">
+              {cat && <span className="chip">{cat.title}</span>}
+              {r.kind && <span className="chip chip-outline">{r.kind}</span>}
+              <span className="chip chip-green"><BadgeCheck size={14} /> Official</span>
+            </div>
+            <h1>{r.fullName || r.title}</h1>
+            {r.description && <p>{r.description}</p>}
+            {r.updated && <span className="rcard-date"><CalendarDays size={14} /> Updated {formatDate(r.updated)}</span>}
+          </div>
+        </div>
 
-        {/* ================= EXAM ================= */}
+        <div className="detail-actions">
+          {r.website && (
+            <a href={r.website} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">
+              Open Official Website <ExternalLink size={18} />
+            </a>
+          )}
+          {r.applyLink && (
+            <a href={r.applyLink} target="_blank" rel="noopener noreferrer" className="btn btn-orange btn-lg">
+              Apply / Login <ExternalLink size={18} />
+            </a>
+          )}
+        </div>
 
-        {data.type === "exam" && (
-          <table className="details-table">
-            <tbody>
-
-              <Row label="Form Name" value={data.formName} />
-              <Row label="Conducting Body" value={data.conductingBody} />
-              <Row label="Official Website" value={data.officialWebsite} />
-              <Row label="Official Notification" value={data.officialNotification} />
-              <Row label="Registration Start" value={data.registrationStart} />
-              <Row label="Last Date" value={data.lastDate} />
-              <Row label="Apply Online" value={data.applyOnline} />
-              <Row label="Correction Window" value={data.correctionWindow} />
-              <Row label="Admit Card" value={data.admitCard} />
-              <Row label="Exam Date" value={data.examDate} />
-              <Row label="Answer Key" value={data.answerKey} />
-              <Row label="Result" value={data.result} />
-              <Row label="Counselling" value={data.counselling} />
-              <Row label="Eligibility" value={data.eligibility} />
-              <Row label="Age Limit" value={data.ageLimit} />
-              <Row label="Application Fee" value={data.applicationFee} />
-              <Row label="Exam Pattern" value={data.examPattern} />
-              <Row label="Syllabus" value={data.syllabus} />
-              <Row label="Previous Papers" value={data.previousPapers} />
-              <Row label="Latest Update" value={data.latestUpdate} />
-
-            </tbody>
-          </table>
+        {r.latestUpdate && (
+          <div className="callout">
+            <Info size={20} />
+            <div><b>Latest update</b><p>{r.latestUpdate}</p></div>
+          </div>
         )}
 
-        {/* ================= GOVERNMENT SERVICE ================= */}
-
-        {data.type === "service" && (
-          <table className="details-table">
-            <tbody>
-
-              <Row label="Service Name" value={data.serviceName} />
-              <Row label="Description" value={data.description} />
-              <Row label="Official Website" value={data.officialWebsite} />
-              <Row label="Apply Online" value={data.applyOnline} />
-              <Row label="Required Documents" value={data.requiredDocuments} />
-              <Row label="Processing Time" value={data.processingTime} />
-              <Row label="Helpline" value={data.helpline} />
-              <Row label="Latest Update" value={data.latestUpdate} />
-
-            </tbody>
-          </table>
+        {entries.length > 0 && (
+          <div className="info-card">
+            <h2>Details</h2>
+            <dl className="info-list">
+              {entries.map(([label, value]) => (
+                <div key={label} className="info-row">
+                  <dt>{label}</dt>
+                  <dd>
+                    {isUrl(value) ? (
+                      <a href={value} target="_blank" rel="noopener noreferrer" className="link-pill">
+                        {hostOf(value)} <ExternalLink size={13} />
+                      </a>
+                    ) : value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
         )}
 
-        {/* ================= OFFICIAL WEBSITE ================= */}
-
-        {data.type === "website" && (
-          <table className="details-table">
-            <tbody>
-
-              <Row label="Website Name" value={data.websiteName} />
-              <Row label="Description" value={data.description} />
-              <Row label="Official Website" value={data.officialWebsite} />
-              <Row label="Purpose" value={data.purpose} />
-              <Row label="Latest Update" value={data.latestUpdate} />
-
-            </tbody>
-          </table>
+        {related.length > 0 && (
+          <div className="related">
+            <h2>More in {cat?.title}</h2>
+            <div className="rgrid">
+              {related.map((x) => <ResourceCard key={x.slug} resource={x} />)}
+            </div>
+          </div>
         )}
-                {/* ================= UNIVERSITY ================= */}
-
-        {data.type === "university" && (
-          <table className="details-table">
-            <tbody>
-
-              <Row label="University Name" value={data.universityName} />
-              <Row label="Official Website" value={data.officialWebsite} />
-              <Row label="Admission Portal" value={data.admissionPortal} />
-              <Row label="Result Portal" value={data.resultPortal} />
-              <Row label="Exam Portal" value={data.examPortal} />
-              <Row label="Academic Calendar" value={data.academicCalendar} />
-              <Row label="Contact" value={data.contact} />
-              <Row label="Latest Update" value={data.latestUpdate} />
-
-            </tbody>
-          </table>
-        )}
-
-        {/* ================= BOARD ================= */}
-
-        {data.type === "board" && (
-          <table className="details-table">
-            <tbody>
-
-              <Row label="Board Name" value={data.boardName} />
-              <Row label="Official Website" value={data.officialWebsite} />
-              <Row label="Result Link" value={data.resultLink} />
-              <Row label="Time Table" value={data.timetable} />
-              <Row label="Admit Card" value={data.admitCard} />
-              <Row label="Syllabus" value={data.syllabus} />
-              <Row label="Sample Papers" value={data.samplePapers} />
-              <Row label="Latest Update" value={data.latestUpdate} />
-
-            </tbody>
-          </table>
-        )}
-
-        {/* ================= PRIVATE JOB ================= */}
-
-        {data.type === "private-job" && (
-          <table className="details-table">
-            <tbody>
-
-              <Row label="Platform Name" value={data.platformName} />
-              <Row label="Description" value={data.description} />
-              <Row label="Official Website" value={data.officialWebsite} />
-              <Row label="Job Categories" value={data.jobCategories} />
-              <Row label="Latest Update" value={data.latestUpdate} />
-
-            </tbody>
-          </table>
-        )}
-
-        {/* ================= SCHOLARSHIP ================= */}
-
-        {data.type === "scholarship" && (
-          <table className="details-table">
-            <tbody>
-
-              <Row label="Scholarship Name" value={data.scholarshipName} />
-              <Row label="Description" value={data.description} />
-              <Row label="Official Website" value={data.officialWebsite} />
-              <Row label="Notification" value={data.notification} />
-              <Row label="Registration Start" value={data.registrationStart} />
-              <Row label="Last Date" value={data.lastDate} />
-              <Row label="Apply Online" value={data.applyOnline} />
-              <Row label="Eligibility" value={data.eligibility} />
-              <Row label="Scholarship Amount" value={data.scholarshipAmount} />
-              <Row label="Latest Update" value={data.latestUpdate} />
-
-            </tbody>
-          </table>
-        )}
-
       </div>
     </section>
   );
 }
-
-export default ResourceDetails;

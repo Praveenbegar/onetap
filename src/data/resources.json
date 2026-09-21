@@ -1,0 +1,1022 @@
+{
+  "categories": [
+    {
+      "slug": "government-jobs",
+      "title": "Government Jobs",
+      "description": "UPSC, SSC, RPSC & more",
+      "icon": "Landmark",
+      "color": "blue"
+    },
+    {
+      "slug": "entrance-exams",
+      "title": "Entrance Exams",
+      "description": "NEET, JEE, CUET & more",
+      "icon": "GraduationCap",
+      "color": "purple"
+    },
+    {
+      "slug": "banking-exams",
+      "title": "Banking Exams",
+      "description": "SBI, IBPS, RBI & more",
+      "icon": "Banknote",
+      "color": "green"
+    },
+    {
+      "slug": "railway-jobs",
+      "title": "Railway Jobs",
+      "description": "RRB NTPC, Group D & more",
+      "icon": "TrainFront",
+      "color": "orange"
+    },
+    {
+      "slug": "defence",
+      "title": "Defence",
+      "description": "Army, Navy, Air Force & more",
+      "icon": "ShieldCheck",
+      "color": "red"
+    },
+    {
+      "slug": "education",
+      "title": "Education",
+      "description": "NTA, AICTE, NCERT & more",
+      "icon": "BookOpen",
+      "color": "cyan"
+    },
+    {
+      "slug": "universities",
+      "title": "Universities",
+      "description": "MBM, JNVU, DU & more",
+      "icon": "University",
+      "color": "indigo"
+    },
+    {
+      "slug": "board-results",
+      "title": "Board Results",
+      "description": "CBSE, RBSE & State Boards",
+      "icon": "ScrollText",
+      "color": "pink"
+    },
+    {
+      "slug": "official-websites",
+      "title": "Official Websites",
+      "description": "UIDAI, Passport, DigiLocker",
+      "icon": "Globe",
+      "color": "teal"
+    },
+    {
+      "slug": "government-services",
+      "title": "Government Services",
+      "description": "SSO, eMitra, Jan Aadhaar",
+      "icon": "FileText",
+      "color": "amber"
+    },
+    {
+      "slug": "private-jobs",
+      "title": "Private Jobs",
+      "description": "LinkedIn, Naukri, Indeed",
+      "icon": "Briefcase",
+      "color": "slate"
+    },
+    {
+      "slug": "scholarships",
+      "title": "Scholarships",
+      "description": "NSP, AICTE & more",
+      "icon": "Award",
+      "color": "emerald"
+    }
+  ],
+  "resources": [
+    {
+      "slug": "neet-ug-result",
+      "title": "NEET UG Result",
+      "fullName": "NEET UG 2026",
+      "category": "entrance-exams",
+      "kind": "Exam",
+      "description": "Official NTA NEET UG 2026 result and score-card portal",
+      "website": "https://neet.nta.nic.in/",
+      "applyLink": "https://neet.ntaonline.in/",
+      "updated": "2026-09-21",
+      "latestUpdate": "As of 21 September 2026, the NEET UG 2026 score card/result and final answer-key updates are available on the official NTA portal.",
+      "details": {
+        "Conducting Body": "National Testing Agency (NTA)",
+        "Official Notification": "https://neet.nta.nic.in/2026/",
+        "Registration Start": "08 February 2026",
+        "Last Date": "11 March 2026",
+        "Correction Window": "12 March 2026 to 14 March 2026",
+        "Admit Card": "Available through the official NEET portal",
+        "Exam Date": "03 May 2026; re-examination for eligible candidates on 21 June 2026",
+        "Answer Key": "https://neet.nta.nic.in/public-notices/",
+        "Result": "https://neet.nta.nic.in/score-card-for-neet-ug-2026/",
+        "Counselling": "Counselling is handled by the respective counselling authorities after result declaration.",
+        "Eligibility": "10+2 / equivalent passed or appearing with Physics, Chemistry, Biology/Biotechnology and English, subject to the official NEET UG 2026 eligibility rules.",
+        "Age Limit": "Minimum age 17 years by 31 December 2026; no upper age limit.",
+        "Application Fee": "As prescribed in the NEET UG 2026 Information Bulletin; category-wise fee applies.",
+        "Exam Pattern": "Pen-and-paper (OMR) examination; 200 questions are provided and 180 are to be attempted, for 720 marks.",
+        "Syllabus": "https://neet.nta.nic.in/2026/",
+        "Previous Papers": "https://nta.ac.in/Downloads"
+      },
+      "popular": true,
+      "quick": true
+    },
+    {
+      "slug": "jee-main",
+      "title": "JEE Main",
+      "fullName": "JEE Main 2027",
+      "category": "entrance-exams",
+      "kind": "Exam",
+      "description": "Official NTA JEE Main portal and latest 2027 schedule notices",
+      "website": "https://jeemain.nta.nic.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "NTA has announced the 2026–27 examination calendar. JEE Main 2027 Session 1 is scheduled for 22–30 January 2027; detailed registration dates and the full notification are to be issued separately.",
+      "details": {
+        "Conducting Body": "National Testing Agency (NTA)",
+        "Registration Start": "Detailed application notification: To be announced by NTA",
+        "Last Date": "To be announced",
+        "Correction Window": "To be announced",
+        "Admit Card": "To be announced",
+        "Exam Date": "Session 1: 22–30 January 2027 (as per NTA exam calendar; detailed schedule subject to notification)",
+        "Result": "To be announced",
+        "Counselling": "JoSAA/CSAB after the JEE Main 2027 process",
+        "Eligibility": "Candidates should follow the JEE Main 2027 information bulletin and the applicable year-of-passing criteria.",
+        "Age Limit": "No age limit, subject to the official eligibility conditions.",
+        "Application Fee": "To be announced in the JEE Main 2027 Information Bulletin.",
+        "Exam Pattern": "Computer Based Test (CBT); Paper 1 for B.E./B.Tech. covers Mathematics, Physics and Chemistry.",
+        "Syllabus": "https://jeemain.nta.nic.in/",
+        "Previous Papers": "https://jeemain.nta.nic.in/"
+      }
+    },
+    {
+      "slug": "cuet-ug",
+      "title": "CUET UG",
+      "fullName": "CUET UG 2026",
+      "category": "entrance-exams",
+      "kind": "Exam",
+      "description": "Official CUET UG 2026 score-card, result and notices",
+      "website": "https://cuet.nta.nic.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "CUET UG 2026 result/NTA scores and score-card access are available. NTA has also published the final answer keys.",
+      "details": {
+        "Conducting Body": "National Testing Agency (NTA)",
+        "Official Notification": "https://cuet.nta.nic.in/documents/",
+        "Registration Start": "01 January 2026",
+        "Last Date": "30 January 2026",
+        "Correction Window": "As per NTA notices",
+        "Admit Card": "https://cuet.nta.nic.in/",
+        "Exam Date": "May–June 2026",
+        "Answer Key": "https://cuet.nta.nic.in/final-answer-keys-for-cuetug-2026/",
+        "Result": "https://cuet.nta.nic.in/score-card-for-cuetug-2026/",
+        "Counselling": "University-wise admission/counselling after CUET score declaration.",
+        "Eligibility": "Class 12 passed/appearing candidates, subject to the eligibility rules of the participating university/programme.",
+        "Age Limit": "No general age limit; participating university/programme rules may apply.",
+        "Application Fee": "As prescribed in the CUET UG 2026 Information Bulletin.",
+        "Exam Pattern": "Computer Based Test (CBT); subjects and question pattern depend on the subjects selected.",
+        "Syllabus": "https://cuet.nta.nic.in/",
+        "Previous Papers": "https://cuet.nta.nic.in/documents/"
+      },
+      "popular": true,
+      "quick": true
+    },
+    {
+      "slug": "gate",
+      "title": "GATE 2027",
+      "category": "entrance-exams",
+      "kind": "Exam",
+      "description": "Indian Institute of Technology Madras (IIT Madras)",
+      "website": "https://gate2027.iitm.ac.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Registration is live. On 19 September 2026, GATE 2027 advised candidates not to delete the DigiLocker account used for application. Regular registration closes 27 September 2026; extended registration closes 05 October 2026.",
+      "details": {
+        "Conducting Body": "Indian Institute of Technology Madras (IIT Madras)",
+        "Official Notification": "https://gate2027.iitm.ac.in/notifications",
+        "Registration Start": "02 September 2026",
+        "Last Date": "27 September 2026 (regular); 05 October 2026 (extended with late fee)",
+        "Correction Window": "14 October 2026 to 21 October 2026",
+        "Admit Card": "04 January 2027 (city allotment notification); admit-card download date to be announced",
+        "Exam Date": "06–07, 13–14 and 20–21 February 2027",
+        "Answer Key": "To be announced",
+        "Result": "19 March 2027",
+        "Counselling": "Institute/PSU recruitment processes are separate and depend on the organization.",
+        "Eligibility": "Candidates currently studying in 3rd year or higher of an eligible undergraduate degree, or candidates who have completed an eligible government-approved degree, subject to the GATE 2027 brochure.",
+        "Age Limit": "No age limit.",
+        "Application Fee": "Per paper: category-wise fee as prescribed by GATE 2027; see the official application portal for the current fee.",
+        "Exam Pattern": "Computer Based Test (CBT), 3 hours, 100 marks; MCQ, MSQ and NAT question types.",
+        "Syllabus": "https://gate2027.iitm.ac.in/exam_papers_and_syllabus",
+        "Previous Papers": "https://gate2027.iitm.ac.in/download"
+      }
+    },
+    {
+      "slug": "cat",
+      "title": "CAT 2026",
+      "category": "entrance-exams",
+      "kind": "Exam",
+      "description": "Indian Institutes of Management (IIMs)",
+      "website": "https://iimcat.ac.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "CAT 2026 registration has been extended to 22 September 2026. The examination is scheduled for 29 November 2026 and the admit card is scheduled for 04 November 2026.",
+      "details": {
+        "Conducting Body": "Indian Institutes of Management (IIMs)",
+        "Official Notification": "https://iimcat.ac.in/",
+        "Registration Start": "03 August 2026",
+        "Last Date": "22 September 2026, 5:00 PM",
+        "Correction Window": "As announced by the CAT 2026 authorities",
+        "Admit Card": "04 November 2026",
+        "Exam Date": "29 November 2026",
+        "Answer Key": "To be announced",
+        "Result": "Expected in December 2026",
+        "Counselling": "Admission processes are conducted separately by participating institutes.",
+        "Eligibility": "Bachelor's degree with at least 50% marks or equivalent CGPA (45% for SC/ST/PwD candidates), or final-year graduation status, subject to the CAT 2026 notification.",
+        "Age Limit": "No age limit.",
+        "Application Fee": "As prescribed in the CAT 2026 official notification.",
+        "Exam Pattern": "Computer Based Test in three sections: VARC, DILR and QA.",
+        "Syllabus": "https://iimcat.ac.in/",
+        "Previous Papers": "https://iimcat.ac.in/"
+      }
+    },
+    {
+      "slug": "clat",
+      "title": "CLAT 2027",
+      "category": "entrance-exams",
+      "kind": "Exam",
+      "description": "Consortium of National Law Universities (NLUs)",
+      "website": "https://clat2027.consortiumofnlus.ac.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "CLAT 2027 online enrolment is open from 03 August to 31 October 2026. The examination is scheduled for 06 December 2026.",
+      "details": {
+        "Conducting Body": "Consortium of National Law Universities (NLUs)",
+        "Official Notification": "https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-instructions.html",
+        "Registration Start": "03 August 2026",
+        "Last Date": "31 October 2026, 11:59 PM",
+        "Correction Window": "Changes after submission are subject to the official CLAT 2027 instructions.",
+        "Admit Card": "Date to be announced on the CLAT 2027 website",
+        "Exam Date": "06 December 2026, 2:00 PM–4:00 PM",
+        "Answer Key": "To be announced",
+        "Result": "To be announced",
+        "Counselling": "December 2026 / January 2027",
+        "Eligibility": "UG: 10+2 or equivalent as specified in the CLAT 2027 eligibility rules. Candidates appearing in the qualifying examination may apply subject to the admission requirements.",
+        "Age Limit": "No upper age limit for CLAT UG.",
+        "Application Fee": "₹4,000 for General/OBC; ₹3,500 for SC/ST/BPL/PwD candidates.",
+        "Exam Pattern": "Offline examination; refer to the official CLAT 2027 question-paper format for the current section-wise pattern.",
+        "Syllabus": "https://clat2027.consortiumofnlus.ac.in/",
+        "Previous Papers": "https://consortiumofnlus.ac.in/"
+      }
+    },
+    {
+      "slug": "nda",
+      "title": "NDA & NA Examination (II) 2026",
+      "category": "defence",
+      "kind": "Exam",
+      "description": "Union Public Service Commission (UPSC)",
+      "website": "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026",
+      "applyLink": "https://upsconline.nic.in/",
+      "updated": "2026-09-21",
+      "latestUpdate": "NDA & NA II 2026 was held on 13 September 2026. The e-Admit Card had been released on 03 September 2026; result is awaited.",
+      "details": {
+        "Conducting Body": "Union Public Service Commission (UPSC)",
+        "Official Notification": "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026",
+        "Registration Start": "20 May 2026",
+        "Last Date": "11 June 2026, 6:00 PM",
+        "Correction Window": "As per UPSC notice",
+        "Admit Card": "Released 03 September 2026",
+        "Exam Date": "13 September 2026",
+        "Answer Key": "To be announced",
+        "Result": "To be announced",
+        "Counselling": "SSB selection process after written-result qualification.",
+        "Eligibility": "12th pass/appearing. Physics, Chemistry and Mathematics are required for Air Force/Naval Wings and the 10+2 Naval Academy entry, subject to the notification.",
+        "Age Limit": "Date-of-birth and marital-status conditions are as specified in the official NDA II 2026 notification.",
+        "Application Fee": "₹100; eligible female/SC/ST candidates and specified wards are exempt.",
+        "Exam Pattern": "Written examination: Mathematics 300 marks and GAT 600 marks, followed by SSB Test/Interview.",
+        "Syllabus": "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026",
+        "Previous Papers": "https://www.upsc.gov.in/examinations/previous-question-papers"
+      }
+    },
+    {
+      "slug": "cds",
+      "title": "CDS II 2026",
+      "category": "defence",
+      "kind": "Exam",
+      "description": "Union Public Service Commission (UPSC)",
+      "website": "https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026",
+      "applyLink": "https://upsconline.nic.in/",
+      "updated": "2026-09-21",
+      "latestUpdate": "CDS II 2026 was held on 13 September 2026. UPSC released the e-Admit Card on 03 September 2026; result is awaited.",
+      "details": {
+        "Conducting Body": "Union Public Service Commission (UPSC)",
+        "Official Notification": "https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026",
+        "Registration Start": "20 May 2026",
+        "Last Date": "11 June 2026, 6:00 PM",
+        "Correction Window": "As per UPSC notice",
+        "Admit Card": "Released 03 September 2026",
+        "Exam Date": "13 September 2026",
+        "Answer Key": "To be announced",
+        "Result": "To be announced",
+        "Counselling": "SSB selection process after written-result qualification.",
+        "Eligibility": "Graduation for IMA/OTA; Engineering degree for INA; and specified degree/Physics & Mathematics conditions for AFA, as per the official notification.",
+        "Age Limit": "Age and marital-status conditions vary by academy and are specified in the CDS II 2026 notification.",
+        "Application Fee": "₹200; female and SC/ST candidates are exempt.",
+        "Exam Pattern": "IMA/INA/AFA: English, General Knowledge and Elementary Mathematics. OTA: English and General Knowledge. Written examination is followed by SSB.",
+        "Syllabus": "https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026",
+        "Previous Papers": "https://www.upsc.gov.in/examinations/previous-question-papers"
+      }
+    },
+    {
+      "slug": "afcat",
+      "title": "AFCAT 02/2026",
+      "category": "defence",
+      "kind": "Exam",
+      "description": "Indian Air Force (IAF)",
+      "website": "https://careerairforce.gov.in/",
+      "applyLink": "https://afcat.edcil.co.in/",
+      "updated": "2026-09-21",
+      "latestUpdate": "AFCAT 02/2026 written examination was conducted on 08 August 2026 and the result was declared on 09 September 2026. Qualified candidates proceed to the AFSB stage.",
+      "details": {
+        "Conducting Body": "Indian Air Force (IAF)",
+        "Official Notification": "https://www.careerairforce.gov.in/notification",
+        "Registration Start": "20 May 2026",
+        "Last Date": "19 June 2026",
+        "Correction Window": "As per AFCAT portal",
+        "Admit Card": "Released before the August 2026 examination",
+        "Exam Date": "08 August 2026",
+        "Answer Key": "To be announced",
+        "Result": "Result declared 09 September 2026",
+        "Counselling": "AFSB selection after qualifying the written examination.",
+        "Eligibility": "Graduation and branch-specific educational/age requirements as prescribed by the AFCAT 02/2026 notification.",
+        "Age Limit": "Flying Branch and Ground Duty age criteria are as specified in the official notification.",
+        "Application Fee": "₹550 + GST for AFCAT Entry; specified exempt entries do not pay the AFCAT examination fee.",
+        "Exam Pattern": "Online CBT, 2 hours, 100 questions, 300 marks; +3 for correct and -1 for incorrect answers.",
+        "Syllabus": "https://www.careerairforce.gov.in/notification",
+        "Previous Papers": "https://careerairforce.gov.in/"
+      }
+    },
+    {
+      "slug": "ugc-net",
+      "title": "UGC NET June 2026",
+      "category": "entrance-exams",
+      "kind": "Exam",
+      "description": "National Testing Agency (NTA)",
+      "website": "https://ugcnet.nta.nic.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "The UGC NET June 2026 score card is available. Final answer keys for the main examination and the September re-examination have been published; results for the re-exam subjects are also being published on the official portal.",
+      "details": {
+        "Conducting Body": "National Testing Agency (NTA)",
+        "Official Notification": "https://ugcnet.nta.nic.in/documents/",
+        "Registration Start": "29 April 2026",
+        "Last Date": "20 May 2026",
+        "Correction Window": "23 May–25 May 2026",
+        "Admit Card": "https://ugcnet.nta.nic.in/document-category/public-notices-2026/",
+        "Exam Date": "June 2026; re-examination for English, Commerce and Sociology on 09–10 September 2026",
+        "Answer Key": "https://ugcnet.nta.nic.in/category/latest-news/",
+        "Result": "https://ugcnet.nta.nic.in/link/ugc-net-june-2026-score-card/",
+        "Counselling": "Not applicable as a centralized counselling process.",
+        "Eligibility": "Master's degree/equivalent with the required percentage under the UGC NET rules; category-wise relaxation applies.",
+        "Age Limit": "JRF age limit and relaxations apply; no upper age limit for Assistant Professor/Ph.D.-only eligibility, subject to rules.",
+        "Application Fee": "Category-wise fee as prescribed in the UGC NET June 2026 Information Bulletin.",
+        "Exam Pattern": "CBT, 3 hours, Paper I and Paper II; 150 questions and 300 marks in total; no negative marking.",
+        "Syllabus": "https://www.ugcnetonline.in/syllabus-new.php",
+        "Previous Papers": "https://www.ugcnetonline.in/previous_question_papers.php"
+      }
+    },
+    {
+      "slug": "ctet",
+      "title": "CTET",
+      "fullName": "CTET September 2026",
+      "category": "entrance-exams",
+      "kind": "Exam",
+      "description": "Official CTET September 2026 portal and notices",
+      "website": "https://ctet.nic.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "CTET September 2026 was scheduled for 13 September 2026. The correction window closed on 10 September 2026; result and answer-key updates are to be checked on the official CTET portal.",
+      "details": {
+        "Conducting Body": "Central Board of Secondary Education (CBSE)",
+        "Official Notification": "https://ctet.nic.in/",
+        "Registration Start": "2026 application window as notified by CBSE",
+        "Last Date": "As per the official CTET September 2026 notice",
+        "Correction Window": "Last correction window closed 10 September 2026",
+        "Admit Card": "https://ctet.nic.in/",
+        "Exam Date": "13 September 2026",
+        "Answer Key": "To be announced",
+        "Result": "To be announced",
+        "Counselling": "Not applicable; CTET is an eligibility test.",
+        "Eligibility": "Paper I and Paper II eligibility depends on the prescribed teacher-education qualifications under CTET/NCTE rules.",
+        "Age Limit": "No upper age limit.",
+        "Application Fee": "Category and paper-wise fee as prescribed in the CTET September 2026 Information Bulletin.",
+        "Exam Pattern": "OMR-based; each paper has 150 MCQs for 150 marks; no negative marking.",
+        "Syllabus": "https://ctet.nic.in/",
+        "Previous Papers": "https://ctet.nic.in/archive/"
+      }
+    },
+    {
+      "slug": "reet",
+      "title": "REET",
+      "category": "entrance-exams",
+      "kind": "Exam",
+      "description": "Official Rajasthan REET/RTET portal",
+      "website": "https://rajeduboard.rajasthan.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "No new REET eligibility-test notification was identified on the official BSER REET page as of 21 September 2026. The latest completed cycle remains REET 2024, conducted in February 2025.",
+      "details": {
+        "Conducting Body": "Board of Secondary Education, Rajasthan (BSER/RBSE)",
+        "Official Notification": "https://rajeduboard.rajasthan.gov.in/RTET-REET/RTET-REET.htm",
+        "Exam Date": "Latest completed cycle: 27–28 February 2025",
+        "Answer Key": "https://rajeduboard.rajasthan.gov.in/RTET-REET/RTET-REET.htm",
+        "Result": "Latest completed cycle result: 08 May 2025",
+        "Counselling": "REET itself is an eligibility test; recruitment/admission processes are separate.",
+        "Eligibility": "Level-wise educational qualification as prescribed by NCTE and Rajasthan rules.",
+        "Age Limit": "As prescribed for the applicable REET cycle.",
+        "Application Fee": "Depends on the level(s) selected in the applicable notification.",
+        "Exam Pattern": "OMR-based eligibility examination; Level 1 and Level 2 are separate papers.",
+        "Syllabus": "https://rajeduboard.rajasthan.gov.in/RTET-REET/RTET-REET.htm",
+        "Previous Papers": "https://rajeduboard.rajasthan.gov.in/RTET-REET/RTET-REET.htm"
+      },
+      "popular": true,
+      "quick": true
+    },
+    {
+      "slug": "ptet",
+      "title": "Rajasthan PTET 2026",
+      "category": "entrance-exams",
+      "kind": "Exam",
+      "description": "Vardhman Mahaveer Open University (VMOU), Kota",
+      "website": "https://ptet.rajasthansarkar.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "PTET 2026 examination was held on 14 June 2026. Candidates should use the official PTET portal for the current result and counselling/college-allotment notices.",
+      "details": {
+        "Conducting Body": "Vardhman Mahaveer Open University (VMOU), Kota",
+        "Official Notification": "https://ptet.rajasthansarkar.in/",
+        "Registration Start": "20 February 2026",
+        "Last Date": "Extended application schedule as notified on the official portal",
+        "Correction Window": "As notified on the official portal",
+        "Admit Card": "https://ptet.rajasthansarkar.in/",
+        "Exam Date": "14 June 2026",
+        "Answer Key": "https://ptet.rajasthansarkar.in/",
+        "Result": "https://ptet.rajasthansarkar.in/",
+        "Counselling": "https://ptet.rajasthansarkar.in/",
+        "Eligibility": "For the 2-year B.Ed route, graduation/postgraduation eligibility is governed by the PTET 2026 rules.",
+        "Age Limit": "As prescribed in the PTET 2026 guidelines.",
+        "Application Fee": "₹500",
+        "Exam Pattern": "OMR-based, 200 questions, 600 marks, 3 hours; Mental Ability, Teaching Attitude & Aptitude, General Awareness and Language Proficiency.",
+        "Syllabus": "https://ptet.rajasthansarkar.in/",
+        "Previous Papers": "https://ptet.rajasthansarkar.in/"
+      }
+    },
+    {
+      "slug": "aadhaar",
+      "title": "Aadhaar",
+      "fullName": "Aadhaar Services",
+      "category": "government-services",
+      "kind": "Service",
+      "description": "Official UIDAI Aadhaar portal and services",
+      "website": "https://uidai.gov.in/",
+      "applyLink": "https://myaadhaar.uidai.gov.in/",
+      "updated": "2026-09-21",
+      "latestUpdate": "UIDAI has announced that charges for email-address update through the Aadhaar mobile application are waived until 31 December 2026. Check UIDAI announcements for current service rules.",
+      "details": {
+        "Required Documents": "Identity/address documents as applicable to the requested Aadhaar service.",
+        "Processing Time": "Varies by service.",
+        "Helpline": "1947"
+      },
+      "popular": true,
+      "quick": true
+    },
+    {
+      "slug": "uidai",
+      "title": "UIDAI",
+      "category": "official-websites",
+      "kind": "Website",
+      "description": "Unique Identification Authority of India — official Aadhaar authority website.",
+      "website": "https://uidai.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Official UIDAI announcements and Aadhaar service advisories are available on the UIDAI portal.",
+      "details": {
+        "Purpose": "Aadhaar enrolment/update information, authentication services, downloads, regulations and citizen services."
+      }
+    },
+    {
+      "slug": "mbm-university",
+      "title": "MBM University",
+      "fullName": "MBM University, Jodhpur",
+      "category": "universities",
+      "kind": "University",
+      "description": "Official MBM University website and admission portal",
+      "website": "https://mbm.ac.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Latest MBM University newsroom updates include admission notices, vacant-seat/direct-admission updates and postgraduate/doctoral admission notices published in September 2026.",
+      "details": {
+        "Admission Portal": "https://admissions.mbm.ac.in/",
+        "Result Portal": "https://mbm.ac.in/",
+        "Exam Portal": "https://mbm.ac.in/",
+        "Academic Calendar": "https://mbm.ac.in/",
+        "Contact": "https://mbm.ac.in/"
+      }
+    },
+    {
+      "slug": "cbse",
+      "title": "Central Board of Secondary Education (CBSE)",
+      "category": "board-results",
+      "kind": "Board",
+      "description": "",
+      "website": "https://www.cbse.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "CBSE 2026 Class X result was announced on 15 April 2026 and Class XII result on 13 May 2026. Use the official CBSE and results portals for current notices.",
+      "details": {
+        "Result Link": "https://results.cbse.nic.in/",
+        "Time Table": "https://www.cbse.gov.in/",
+        "Admit Card": "https://www.cbse.gov.in/",
+        "Syllabus": "https://www.cbse.gov.in/",
+        "Sample Papers": "https://www.cbse.gov.in/"
+      }
+    },
+    {
+      "slug": "linkedin-jobs",
+      "title": "LinkedIn Jobs",
+      "category": "private-jobs",
+      "kind": "Job Portal",
+      "description": "Official LinkedIn job and internship search platform.",
+      "website": "https://www.linkedin.com/jobs/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "LinkedIn Jobs is currently active for job and internship searches; listings change continuously.",
+      "details": {
+        "Job Categories": "Engineering, IT, software, business development, finance, sales, marketing, HR, healthcare and other sectors."
+      }
+    },
+    {
+      "slug": "nsp",
+      "title": "National Scholarship Portal (NSP) 2026-27",
+      "category": "scholarships",
+      "kind": "Scholarship",
+      "description": "Government of India scholarship application and tracking portal.",
+      "website": "https://scholarships.gov.in/",
+      "applyLink": "https://scholarships.gov.in/Students",
+      "updated": "2026-09-21",
+      "latestUpdate": "NSP is open for Academic Year 2026-27. One Time Registration (OTR) is required. The official portal currently lists multiple schemes with student-application deadlines extending into September/October 2026.",
+      "details": {
+        "Notification": "https://scholarships.gov.in/All-Scholarships",
+        "Registration Start": "01 June 2026 for the Academic Year 2026-27 portal opening",
+        "Last Date": "Scheme-specific; many schemes currently show 31 October 2026 as the student-application deadline.",
+        "Eligibility": "Depends on the selected scholarship scheme.",
+        "Scholarship Amount": "Scheme-specific."
+      }
+    },
+    {
+      "slug": "rajasthan-sso",
+      "title": "Rajasthan SSO",
+      "category": "government-services",
+      "kind": "Service",
+      "description": "Official Rajasthan Single Sign-On portal",
+      "website": "https://sso.rajasthan.gov.in/signin",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Use the official SSO portal for the current login and service availability.",
+      "details": {
+        "Required Documents": "Depends on the selected government service."
+      },
+      "popular": true,
+      "quick": true
+    },
+    {
+      "slug": "emitra-rajasthan",
+      "title": "eMitra Rajasthan",
+      "category": "government-services",
+      "kind": "Service",
+      "description": "Official Rajasthan eMitra service portal",
+      "website": "https://emitra.rajasthan.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Use the official eMitra portal for current service links and application requirements.",
+      "details": {
+        "Required Documents": "Depends on the selected eMitra service."
+      },
+      "popular": true,
+      "quick": true
+    },
+    {
+      "slug": "jan-aadhaar",
+      "title": "Jan Aadhaar",
+      "category": "government-services",
+      "kind": "Service",
+      "description": "Official Rajasthan Jan Aadhaar portal",
+      "website": "https://janaadhaar.rajasthan.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Use the official Jan Aadhaar portal for current enrolment and update services.",
+      "details": {
+        "Required Documents": "Depends on the requested Jan Aadhaar service."
+      },
+      "popular": true,
+      "quick": true
+    },
+    {
+      "slug": "passport-seva",
+      "title": "Passport Seva",
+      "category": "government-services",
+      "kind": "Service",
+      "description": "Official Government of India Passport Seva portal",
+      "website": "https://www.passportindia.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Use Passport Seva for current application, appointment and passport-status services.",
+      "details": {
+        "Required Documents": "Identity/address and other documents depend on the passport service."
+      },
+      "popular": true,
+      "quick": true
+    },
+    {
+      "slug": "digilocker",
+      "title": "DigiLocker",
+      "category": "government-services",
+      "kind": "Service",
+      "description": "Official DigiLocker document wallet and services",
+      "website": "https://www.digilocker.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "DigiLocker remains the official digital-document platform; service availability depends on the issuer.",
+      "details": {
+        "Required Documents": "Aadhaar/mobile details may be required for account and service-specific verification."
+      },
+      "popular": true,
+      "quick": true
+    },
+    {
+      "slug": "rpsc",
+      "title": "RPSC",
+      "fullName": "Rajasthan Public Service Commission (RPSC)",
+      "category": "government-jobs",
+      "kind": "Website",
+      "description": "Official Rajasthan Public Service Commission portal",
+      "website": "https://rpsc.rajasthan.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Check the official RPSC portal for the latest advertisements, examination schedules and results.",
+      "details": {
+        "Purpose": "Recruitment notifications, applications, admit cards, results and examination information."
+      },
+      "popular": true,
+      "quick": true
+    },
+    {
+      "slug": "rssb",
+      "title": "RSSB",
+      "fullName": "Rajasthan Staff Selection Board (RSSB)",
+      "category": "government-jobs",
+      "kind": "Website",
+      "description": "Official Rajasthan Staff Selection Board portal",
+      "website": "https://rssb.rajasthan.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Check the official RSSB portal for current recruitment notifications and candidate services.",
+      "details": {
+        "Purpose": "Recruitment advertisements, applications, admit cards, answer keys and results."
+      }
+    },
+    {
+      "slug": "ssc",
+      "title": "SSC",
+      "fullName": "Staff Selection Commission (SSC)",
+      "category": "government-jobs",
+      "kind": "Website",
+      "description": "Official Staff Selection Commission portal",
+      "website": "https://ssc.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Check the official SSC portal for current recruitment calendars and notices.",
+      "details": {
+        "Purpose": "SSC recruitment notifications, applications, admit cards, answer keys and results."
+      },
+      "popular": true
+    },
+    {
+      "slug": "upsc",
+      "title": "UPSC",
+      "fullName": "Union Public Service Commission (UPSC)",
+      "category": "government-jobs",
+      "kind": "Website",
+      "description": "Official Union Public Service Commission portal",
+      "website": "https://www.upsc.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Check UPSC's official examination pages for current notifications, schedules and results.",
+      "details": {
+        "Purpose": "Examination notifications, applications, admit cards, results and recruitment information."
+      },
+      "popular": true
+    },
+    {
+      "slug": "railway-recruitment",
+      "title": "Railway Recruitment",
+      "fullName": "Indian Railways / Railway Recruitment",
+      "category": "railway-jobs",
+      "kind": "Website",
+      "description": "Official Indian Railways / RRB recruitment resources",
+      "website": "https://indianrailways.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Railway recruitment notices are issued by the relevant RRB; candidates should verify the regional RRB notice before applying.",
+      "details": {
+        "Purpose": "Railway recruitment information, RRB notices and official railway services."
+      }
+    },
+    {
+      "slug": "pan-card",
+      "title": "PAN Card",
+      "fullName": "PAN Card Services",
+      "category": "government-services",
+      "kind": "Service",
+      "description": "Official Income Tax PAN and e-filing services",
+      "website": "https://www.incometax.gov.in/iec/foportal/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Use the Income Tax Department portal and the authorized PAN service providers linked by the government.",
+      "details": {
+        "Required Documents": "PAN application/update requirements depend on the selected service."
+      },
+      "quick": true
+    },
+    {
+      "slug": "driving-licence",
+      "title": "Driving Licence",
+      "category": "government-services",
+      "kind": "Service",
+      "description": "Official Parivahan driving licence services",
+      "website": "https://parivahan.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Use the official Parivahan portal for current licence application, renewal and appointment services.",
+      "details": {
+        "Required Documents": "Age, address, identity and vehicle/learner-licence documents vary by service."
+      },
+      "quick": true
+    },
+    {
+      "slug": "voter-id",
+      "title": "Voter ID",
+      "fullName": "Voter Services",
+      "category": "government-services",
+      "kind": "Service",
+      "description": "Official Election Commission voter services portal",
+      "website": "https://voters.eci.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Use the official ECI Voters' Services Portal for current voter registration and correction services.",
+      "details": {
+        "Required Documents": "Documents depend on the registration, correction or other voter service requested."
+      }
+    },
+    {
+      "slug": "jnvu",
+      "title": "JNVU",
+      "fullName": "Jai Narain Vyas University (JNVU)",
+      "category": "universities",
+      "kind": "University",
+      "description": "Official Jai Narain Vyas University website",
+      "website": "https://www.jnvu.edu.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Use the official JNVU website for current admissions, examinations, results and notices.",
+      "details": {
+        "Admission Portal": "https://www.jnvu.edu.in/",
+        "Result Portal": "https://www.jnvu.edu.in/",
+        "Exam Portal": "https://www.jnvu.edu.in/",
+        "Academic Calendar": "https://www.jnvu.edu.in/",
+        "Contact": "https://www.jnvu.edu.in/"
+      }
+    },
+    {
+      "slug": "rajasthan-university",
+      "title": "Rajasthan University",
+      "fullName": "University of Rajasthan",
+      "category": "universities",
+      "kind": "University",
+      "description": "Official University of Rajasthan website",
+      "website": "https://www.uniraj.ac.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Use the official University of Rajasthan website for current admissions, examination and result notices.",
+      "details": {
+        "Admission Portal": "https://www.uniraj.ac.in/",
+        "Result Portal": "https://www.uniraj.ac.in/",
+        "Exam Portal": "https://www.uniraj.ac.in/",
+        "Academic Calendar": "https://www.uniraj.ac.in/",
+        "Contact": "https://www.uniraj.ac.in/"
+      }
+    },
+    {
+      "slug": "rbse-10th-result",
+      "title": "RBSE 10th Result",
+      "fullName": "Board of Secondary Education Rajasthan (RBSE) – Class 10",
+      "category": "board-results",
+      "kind": "Board",
+      "description": "Official Rajasthan Board result and student resources",
+      "website": "https://rajeduboard.rajasthan.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Use the official RBSE portal for the latest result, timetable, syllabus and examination notices.",
+      "details": {
+        "Result Link": "https://rajeduboard.rajasthan.gov.in/",
+        "Time Table": "https://rajeduboard.rajasthan.gov.in/",
+        "Admit Card": "https://rajeduboard.rajasthan.gov.in/",
+        "Syllabus": "https://rajeduboard.rajasthan.gov.in/",
+        "Sample Papers": "https://rajeduboard.rajasthan.gov.in/"
+      }
+    },
+    {
+      "slug": "rbse-12th-result",
+      "title": "RBSE 12th Result",
+      "fullName": "Board of Secondary Education Rajasthan (RBSE) – Class 12",
+      "category": "board-results",
+      "kind": "Board",
+      "description": "Official Rajasthan Board result and student resources",
+      "website": "https://rajeduboard.rajasthan.gov.in/",
+      "applyLink": "",
+      "updated": "2026-09-21",
+      "latestUpdate": "Use the official RBSE portal for the latest result, timetable, syllabus and examination notices.",
+      "details": {
+        "Result Link": "https://rajeduboard.rajasthan.gov.in/",
+        "Time Table": "https://rajeduboard.rajasthan.gov.in/",
+        "Admit Card": "https://rajeduboard.rajasthan.gov.in/",
+        "Syllabus": "https://rajeduboard.rajasthan.gov.in/",
+        "Sample Papers": "https://rajeduboard.rajasthan.gov.in/"
+      }
+    },
+    {
+      "slug": "ibps",
+      "title": "IBPS",
+      "category": "banking-exams",
+      "kind": "Website",
+      "description": "Institute of Banking Personnel Selection - PO, Clerk, SO and RRB recruitment exams.",
+      "website": "https://www.ibps.in/",
+      "applyLink": "",
+      "updated": "",
+      "latestUpdate": "",
+      "tags": [
+        "bank",
+        "po",
+        "clerk",
+        "rrb"
+      ],
+      "details": {}
+    },
+    {
+      "slug": "sbi-careers",
+      "title": "SBI Careers",
+      "category": "banking-exams",
+      "kind": "Website",
+      "description": "State Bank of India recruitment notices, applications and results.",
+      "website": "https://sbi.co.in/web/careers",
+      "applyLink": "",
+      "updated": "",
+      "latestUpdate": "",
+      "tags": [
+        "sbi",
+        "bank",
+        "po",
+        "clerk"
+      ],
+      "details": {}
+    },
+    {
+      "slug": "rbi",
+      "title": "RBI",
+      "category": "banking-exams",
+      "kind": "Website",
+      "description": "Reserve Bank of India - official website, recruitment and notifications.",
+      "website": "https://www.rbi.org.in/",
+      "applyLink": "",
+      "updated": "",
+      "latestUpdate": "",
+      "tags": [
+        "rbi",
+        "bank",
+        "grade b"
+      ],
+      "details": {}
+    },
+    {
+      "slug": "nta",
+      "title": "NTA",
+      "category": "education",
+      "kind": "Website",
+      "description": "National Testing Agency - JEE Main, NEET, CUET, UGC NET and other exams.",
+      "website": "https://nta.ac.in/",
+      "applyLink": "",
+      "updated": "",
+      "latestUpdate": "",
+      "tags": [
+        "exam",
+        "jee",
+        "neet",
+        "cuet"
+      ],
+      "details": {}
+    },
+    {
+      "slug": "ncert",
+      "title": "NCERT",
+      "category": "education",
+      "kind": "Website",
+      "description": "Official NCERT textbooks, syllabus and study material.",
+      "website": "https://ncert.nic.in/",
+      "applyLink": "",
+      "updated": "",
+      "latestUpdate": "",
+      "tags": [
+        "books",
+        "textbook",
+        "syllabus"
+      ],
+      "details": {}
+    },
+    {
+      "slug": "aicte",
+      "title": "AICTE",
+      "category": "education",
+      "kind": "Website",
+      "description": "All India Council for Technical Education - approved institutions and schemes.",
+      "website": "https://www.aicte-india.org/",
+      "applyLink": "",
+      "updated": "",
+      "latestUpdate": "",
+      "tags": [
+        "engineering",
+        "technical"
+      ],
+      "details": {}
+    },
+    {
+      "slug": "ugc",
+      "title": "UGC",
+      "category": "education",
+      "kind": "Website",
+      "description": "University Grants Commission - universities, regulations and scholarships.",
+      "website": "https://www.ugc.gov.in/",
+      "applyLink": "",
+      "updated": "",
+      "latestUpdate": "",
+      "tags": [
+        "university",
+        "net"
+      ],
+      "details": {}
+    },
+    {
+      "slug": "mygov",
+      "title": "MyGov",
+      "category": "official-websites",
+      "kind": "Website",
+      "description": "Government of India citizen engagement platform.",
+      "website": "https://www.mygov.in/",
+      "applyLink": "",
+      "updated": "",
+      "latestUpdate": "",
+      "tags": [
+        "government",
+        "citizen"
+      ],
+      "details": {}
+    },
+    {
+      "slug": "india-gov",
+      "title": "National Portal of India",
+      "category": "official-websites",
+      "kind": "Website",
+      "description": "Official gateway to Government of India services and information.",
+      "website": "https://www.india.gov.in/",
+      "applyLink": "",
+      "updated": "",
+      "latestUpdate": "",
+      "tags": [
+        "government",
+        "portal"
+      ],
+      "details": {}
+    },
+    {
+      "slug": "employment-news",
+      "title": "Employment News",
+      "category": "official-websites",
+      "kind": "Website",
+      "description": "Weekly government job and career notices.",
+      "website": "https://www.employmentnews.gov.in/",
+      "applyLink": "",
+      "updated": "",
+      "latestUpdate": "",
+      "tags": [
+        "jobs",
+        "government"
+      ],
+      "details": {}
+    }
+  ]
+}

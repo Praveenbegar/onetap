@@ -1,78 +1,56 @@
-import { useParams, Link } from "react-router-dom";
-import categoryItems from "../data/categoryItems";
-import "./SearchResults.css";
+import { useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import { Search, ArrowLeft, Inbox } from "lucide-react";
+import { useData } from "../context/DataContext";
+import ResourceCard from "../components/ResourceCard";
+import { CategoryIcon } from "../lib/icons";
+import { searchResources } from "../lib/search";
+import usePageTitle from "../lib/usePageTitle";
+import NotFound from "./NotFound";
 
-function CategoryResources() {
-  const { category } = useParams();
+export default function CategoryResources() {
+  const { category: slug } = useParams();
+  const { categories, resources } = useData();
+  const [q, setQ] = useState("");
 
-  if (!category) {
-    return (
-      <section className="search-results-page">
-        <div className="search-results-container">
-          <h1>Category Not Found</h1>
-        </div>
-      </section>
-    );
-  }
-
-  const items = categoryItems[category] || [];
-
-  const heading = category
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
+  const category = categories.find((c) => c.slug === slug);
+  usePageTitle(category?.title);
+  if (!category) return <NotFound />;
+  const all = resources.filter((r) => r.category === slug);
+  const items = q.trim() ? searchResources(all, categories, q) : all;
 
   return (
-    <section className="search-results-page">
-      <div className="search-results-container">
+    <section className="page">
+      <div className="container">
+        <Link to="/categories" className="back-link"><ArrowLeft size={16} /> All categories</Link>
 
-        <h1>{heading}</h1>
-
-        <p>{items.length} Resources Available</p>
-
-        <div className="search-results-grid">
-
-          {items.map((item, index) => {
-
-            const slug = item
-              .toLowerCase()
-              .replace(/\s+/g, "-");
-
-            return (
-
-              <div
-                key={index}
-                className="resource-card"
-              >
-
-                <div className="resource-content">
-
-                  <h3>{item}</h3>
-
-                  <p>
-                    Click below to view details.
-                  </p>
-
-                  <Link
-                    to={`/details/${slug}`}
-                    className="visit-btn"
-                  >
-                    Open
-                  </Link>
-
-                </div>
-
-              </div>
-
-            );
-
-          })}
-
+        <div className={`cat-hero tone-${category.color}`}>
+          <span className="cat-icon big"><CategoryIcon name={category.icon} size={34} /></span>
+          <div>
+            <h1>{category.title}</h1>
+            <p>{category.description} · {all.length} {all.length === 1 ? "resource" : "resources"}</p>
+          </div>
+          {all.length > 3 && (
+            <label className="filter">
+              <Search size={18} />
+              <input value={q} onChange={(e) => setQ(e.target.value)} placeholder={`Search in ${category.title}`} />
+            </label>
+          )}
         </div>
 
+        {items.length > 0 ? (
+          <div className="rgrid">
+            {items.map((r) => <ResourceCard key={r.slug} resource={r} />)}
+          </div>
+        ) : (
+          <div className="empty">
+            <Inbox size={44} />
+            <h2>{all.length ? "Nothing found" : "Coming soon"}</h2>
+            <p>{all.length ? "Try a different keyword." : "Resources for this category are being added."}</p>
+            <Link to="/contact" className="btn btn-primary">Suggest a link</Link>
+          </div>
+        )}
       </div>
     </section>
   );
 }
-
-export default CategoryResources;

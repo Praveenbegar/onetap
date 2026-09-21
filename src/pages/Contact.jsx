@@ -31,7 +31,7 @@ export default function Contact() {
           </div>
 
           <form className="info-card form" onSubmit={submit}>
-            <label>Your name<input required value={form.name} onChange={set("name")} placeholder="Naam" /></label>
+            <label>Your name<input required value={form.name} onChange={set("name")} placeholder="Enter your name" /></label>
             <label>Subject
               <select value={form.subject} onChange={set("subject")}>
                 <option>Suggest a link</option>

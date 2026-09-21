@@ -93,7 +93,7 @@ export default function Home() {
       {/* POPULAR */}
       <section className="section">
         <div className="container">
-          <SectionHeading title="Most Used Resources" subtitle="Students aur job seekers ke favourite official websites." to="/latest" linkText="Latest updates" />
+          <SectionHeading title="Most Used Resources" subtitle="Popular official websites for students and job seekers.." to="/latest" linkText="Latest updates" />
           <div className="rgrid">
             {popular.map((r) => <ResourceCard key={r.slug} resource={r} />)}
           </div>
